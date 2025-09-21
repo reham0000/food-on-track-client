@@ -1,0 +1,32 @@
+[
+    {
+        "_id": "643010e0f5a7e52ce1e8fa65",
+        "name": "Mr. Halim",
+        "details": "Amazing service! Ordering food on trains is now so easy, fast, and reliable. The meals are fresh, tasty, and delivered right on time",
+        "rating": 3
+    },
+    {
+        "_id": "643010f9f5a7e52ce1e8fa66",
+        "name": "Korim Miah",
+        "details": "FoodOnTrack made my train journey enjoyable. The food quality is excellent, ordering is hassle-free, and delivery is always punctual. Highly recommended!",
+        "rating": 2
+    },
+    {
+        "_id": "6430110af5a7e52ce1e8fa67",
+        "name": "Ramzan Ali",
+        "details": "Excellent railway food service! Delicious meals, smooth online ordering, and quick delivery. It truly makes traveling by train more comfortable and stress-free.",
+        "rating": 5
+    },
+    {
+        "_id": "64301123f5a7e52ce1e8fa68",
+        "name": "Shaheen",
+        "details": "I love using FoodOnTrack! The menu variety is great, food is fresh, and I never have to worry about hunger during my journey.",
+        "rating": 4
+    },
+    {
+        "_id": "6430113af5a7e52ce1e8fa69",
+        "name": "Ridoy",
+        "details": "Reliable, convenient, and tasty! FoodOnTrack ensures you get your favorite meals on time while traveling. A must-try service for train passengers in Bangladesh.",
+        "rating": 5
+    }
+]
