@@ -5,7 +5,7 @@ const Extra = () => {
     
         <div className="flex justify-center items-center mb-16 bg-gray-100">
       {/* Container */}
-      <div className="relative overflow-hidden border border-blue-400 rounded-md">
+      <div className="relative overflow-hidden border  rounded-md">
         
         {/* Background Image */}
         <img
