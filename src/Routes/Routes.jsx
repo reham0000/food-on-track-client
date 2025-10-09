@@ -1,6 +1,4 @@
-import {
-  createBrowserRouter,
-} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import { Children } from "react";
 import Home from "../pages/Home/Home/Home";
@@ -13,47 +11,60 @@ import PrivetRoute from "./PrivetRoute";
 import Secret from "../pages/Shared/Secret/Secret";
 import DashBoard from "../Layout/Dashboard";
 import Cart from "../pages/DashBoard/Cart/Cart";
+import AllUsers from "../pages/DashBoard/AllUsers/AllUsers";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
     children: [
-        {
-            path: '/',
-            element: <Home></Home>
-        },
-        {
-          path:'menu',
-          element: <Menu></Menu>
-        },
-        {
-          path:'order/:category',
-          element: <Order></Order>
-        },
-        {
-          path: 'login',
-          element: <Login></Login>
-        },
-        {
-          path: 'signup',
-          element: <SignUp></SignUp>
-        },
-        {
-          path: 'secret',
-          element: <PrivetRoute><Secret></Secret></PrivetRoute>
-        }
-        
-    ]
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "menu",
+        element: <Menu></Menu>,
+      },
+      {
+        path: "order/:category",
+        element: <Order></Order>,
+      },
+      {
+        path: "login",
+        element: <Login></Login>,
+      },
+      {
+        path: "signup",
+        element: <SignUp></SignUp>,
+      },
+      {
+        path: "secret",
+        element: (
+          <PrivetRoute>
+            <Secret></Secret>
+          </PrivetRoute>
+        ),
+      },
+    ],
   },
   {
-    path: 'dashboard',
-    element: <DashBoard></DashBoard>,
+    path: "dashboard",
+    element: (
+      <PrivetRoute>
+        <DashBoard></DashBoard>
+      </PrivetRoute>
+    ),
     children: [
       {
-        path: 'cart',
-        element: <Cart></Cart>
-      }
-    ]
-  }
+        path: "cart",
+        element: <Cart></Cart>,
+      },
+      // admin routes
+      {
+        path: "users",
+        element: <AllUsers></AllUsers>,
+      },
+    ],
+  },
 ]);
